@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Open Sans", serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body { 
+    font-family: Arial, sans-serif; 
+    background: #f8f9fa; 
+}
+.navbar {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+.dropdown-menu {
+    min-width: 180px;
+    z-index: 999;
+}
+.dropdown-item i {
+    margin-right: 8px;
+}
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+.banner img {
+    height: 500px; /* Adjust banner height */
+    object-fit: cover;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    padding: 20px;
+    border-radius: 10px;
+}
+.content {
+    padding: 60px 0;
+}
+.importance-section img {
+    border-radius: 10px;
+}
+.container-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register-card {
+    max-width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.form-control {
+    border-radius: 30px;
+}
+.btn-register {
+    border-radius: 30px;
+    background: #007bff;
+    color: white;
+    transition: 0.3s;
+}
+.btn-register:hover {
+    background: #0056b3;
+}
+.prayer-conatiner{
+    margin: 2rem auto;
+    min-height: 80vh;
+}
+.disable{
+
+    cursor: none;
+    pointer-events: disable;
+}
+.chart-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chart-div{
+    width: 500px;
+}

@@ -1,0 +1,29 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Remove .php extension
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/.]+)$ $1.php [L]
+
+# Remove .html extension
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/.]+)$ $1.html [L]
+
+# Prevent access to .htaccess & config.php
+<FilesMatch "(\.htaccess|config\.php|admin_settings.php)">
+    Require all denied
+</FilesMatch>
+
+
+
+
+# Redirect all non-existing URLs to a custom 404 page
+ErrorDocument 404 /NamazApp/error.html
+
+
+
+
+
+
