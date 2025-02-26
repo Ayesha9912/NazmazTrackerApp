@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 25, 2025 at 07:29 PM
+-- Generation Time: Feb 26, 2025 at 07:00 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -39,7 +39,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `email`, `pass`) VALUES
-(4, 'Ayesha', 'ayeshauni99@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef');
+(5, 'Ayesha', 'ayeshauni99@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef');
 
 -- --------------------------------------------------------
 
@@ -65,7 +65,9 @@ INSERT INTO `prayers_log` (`id`, `user_id`, `prayer_name`, `status`, `date`, `up
 (7, 2, 'Asr', 'completed', '2025-02-24', '2025-02-25 01:05:52'),
 (8, 2, 'Dhuhr', 'completed', '2025-02-24', '2025-02-25 01:05:54'),
 (9, 2, 'Maghrib', 'missed', '2025-02-24', '2025-02-25 01:05:57'),
-(10, 2, 'Isha', 'completed', '2025-02-24', '2025-02-25 01:05:58');
+(10, 2, 'Isha', 'completed', '2025-02-24', '2025-02-25 01:05:58'),
+(13, 2, 'Fajr', 'completed', '2025-02-26', '2025-02-26 15:00:10'),
+(14, 2, 'Dhuhr', 'missed', '2025-02-26', '2025-02-26 15:00:13');
 
 -- --------------------------------------------------------
 
@@ -88,7 +90,8 @@ CREATE TABLE `qaza_prayers` (
 
 INSERT INTO `qaza_prayers` (`qaza_id`, `user_id`, `prayer_name`, `original_date`, `qaza_date`, `status`) VALUES
 (3, 2, 'Fajr', '2025-02-24', NULL, 'pending'),
-(4, 2, 'Maghrib', '2025-02-24', '2025-02-24', 'completed');
+(4, 2, 'Maghrib', '2025-02-24', '2025-02-24', 'completed'),
+(6, 2, 'Dhuhr', '2025-02-26', NULL, 'pending');
 
 -- --------------------------------------------------------
 
@@ -109,7 +112,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `date_join`) VALUES
-(2, 'Ayesha', 'ayeshauni99@gmail.com', '40bd001563085fc35165329ea1ff5c5ecbdbbeef', '2025-02-25');
+(2, 'Ayesha', 'ayeshauni99@gmail.com', 'f0aed3c79215f89d83a2258d044997d0f2b08946', '2025-02-25');
 
 --
 -- Indexes for dumped tables
@@ -147,19 +150,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `prayers_log`
 --
 ALTER TABLE `prayers_log`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `qaza_prayers`
 --
 ALTER TABLE `qaza_prayers`
-  MODIFY `qaza_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `qaza_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`

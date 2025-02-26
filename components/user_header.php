@@ -27,6 +27,11 @@
                     <a class="nav-link" href="http://localhost/namazapp/pages/qaza.php"><i class="fa-solid fa-file"></i>
                         Qaza Page</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/namazapp/admin/dashboard.php"><i
+                            class="fa-solid fa-user"></i>
+                        Admin Dashboard</a>
+                </li>
             </ul>
 
             <ul class="navbar-nav">
@@ -41,7 +46,7 @@
 
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item text-muted" href="#">
+                        <li><a class="dropdown-item text-muted" href="http://localhost/namazapp/pages/profile.php">
                                 <?php if (isset($_SESSION['id'])) { ?>
                                     <i class="fa-solid fa-user"></i> <?= $_SESSION['name'] ?></a></li>
                             <?php
@@ -57,7 +62,8 @@
                 </li>
                 <li><a class="dropdown-item" href="http://localhost/namazapp/pages/login.php"><i
                             class="fa-solid fa-sign-in-alt"></i> Login</a></li>
-                <li><a class="dropdown-item" href="logout.php"><i class="fa-solid fa-sign-out-alt"></i>
+                <li><a class="dropdown-item" href="http://localhost/namazapp/middleware/logout.php"><i
+                            class="fa-solid fa-sign-out-alt"></i>
                         Logout</a></li>
                 <li><a class="dropdown-item text-primary fw-bold" href="http://localhost/namazapp/pages/register.php"><i
                             class="fa-solid fa-user-plus"></i> Register</a></li>
