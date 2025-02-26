@@ -36,7 +36,7 @@ Ensure you have the following installed:
 ### Steps to Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/namaz-tracking.git
+   git clone https://github.com/yourusername/NamazTrackingApp.git
    cd namaz-tracking
    ```
 2. Move the project files to your server's root directory (e.g., `htdocs` for XAMPP).
@@ -49,7 +49,7 @@ Ensure you have the following installed:
 
 5. Start the server and access the app in the browser:
    ```bash
-   http://localhost/namaz-tracking
+   http://localhost/NamazTrackingApp
    ```
 
 ## Usage
